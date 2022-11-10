@@ -36,11 +36,72 @@ background-attachment: fixed;
 
 .banner-wrapper{
 position: relative;
-min-height: 30rem;
 min-height: 35rem;
+max-height: 40rem;
 overflow: hidden;
 }
-.banner-video{
-   
+.banner-article-wrapper{
+    position: absolute;
+    z-index: 5;
+   bottom: 50%;
+    left: 0;
+   right: 0; 
+}
+.banner-article{
+    max-width: 47vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+.banner-article > h1{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.banner-article > p{
+    font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.65;
+}
+.banner-video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .banner-wrapper:after {
+    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: " ";
+    display: block;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .banner-wrapper:before {
+    background: #111111;
+    content: "";
+    height: 100%;
+    opacity: 0.45;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+.max-widh{
+    max-width: 60rem;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.paralax-wrapper{
+    background-color: red;
+    width: 100%;
+}
+.footer{
+    background-color: #111;
 
 }
