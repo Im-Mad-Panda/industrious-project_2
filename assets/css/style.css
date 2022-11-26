@@ -115,7 +115,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .main-article > p {
-  max-width: 55rem;
+  max-width: 56em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -185,6 +185,48 @@ body {
 .feedback-wrapper {
   margin-bottom: 4rem;
 }
+.feedback-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  padding: 3rem;
+}
+.feedback-card > blockquote{
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65;
+    border-left: solid 0.5rem rgba(0, 0, 0, 0.25);
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 2rem;
+    text-align: left;
+}
+.person-card > img{
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.person-card > p{
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.65;
+  font-size: 0.75rem;
+  color: #6c6c6c;
+}
+.person-card > p > strong{
+  color: #ce1b28;
+  font-weight: 600;
+}
+.person-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .footer {
   background-color: #111;
 }
